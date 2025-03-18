@@ -881,10 +881,10 @@ rhel9cis_authselect_custom_profile_create: true
 
 # This variable configures the name of the custom profile to be created and selected.
 # To be changed from default - cis_example_profile
-rhel9cis_authselect_custom_profile_name: cis_example_profile
+rhel9cis_authselect_custom_profile_name: my_auth_profile
 # Name of the existing authselect profile to copy - options can be found with
 # ```authselect list``` on the host to be configured
-rhel9cis_authselect_default_profile_to_copy: "sssd --symlink-meta"
+rhel9cis_authselect_default_profile_to_copy: "sssd --symlink-meta --symlink-pam"
 
 ## Controls
 # - 5.3.3. - Ensure lockout for failed password attempts is configured
